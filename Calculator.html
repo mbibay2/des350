@@ -4,12 +4,74 @@
 <meta charset="utf-8">
 	
 	<style>
+		body {background-color:lightgray;
+			margin: 0 auto;
+			width: 50%;
+		}
+		
+		#display{
+			width: 400px;
+			height: 60px;
+			color: black;
+			background-color: transparent;
+			border-top-color: transparent;
+			border-left-color: transparent;
+			border-right-color: transparent;
+			border-bottom-color: black;
+			font-size: 40px;
+			text-align: right;
+			margin-top: 20px;
+		}
+
+		
+		.number{
+			width: 60px;
+			height: 80px;
+			background-color: lightgray;
+			border-style: none;
+			font-size: 40px;
+			text-align: left;
+		}
+		
+		.number:hover{
+			width: 60px;
+			height: 80px;
+			background-color: lightgray;
+			color: darkred;
+			border-style: none;
+			font-size: 40px;
+			text-align: left;
+		}
+		
+		.operator{
+			width: 60px;
+			height: 80px;
+			background-color: lightgray;
+			border-style: none;
+			font-size: 40px;
+			text-align: left;
+		
+		}
+		
+		.operator:hover{
+			width: 60px;
+			height: 80px;
+			background-color: lightgray;
+			color: blue;
+			border-style: none;
+			font-size: 40px;
+			text-align: left;
+		}
+		
+		
 	</style>
 	
 <title>Calculator</title>
 </head>
 
 <body>
+	
+	
 	<form name="calculator">
 		
 		<div id="myCalculator">
@@ -46,22 +108,23 @@
 				<input type="button" class="number" value="0" onclick="calculator.display.value+='0'">
 				
 				<input type="button" class="operator" name="decimal" value="." onclick="calculator.display.value+='.'">
+				
+				<input type="button" class="operator" name="clear" value="C" onclick="calculator.display.value=''">
+	
+				<input type="button" class="operator" name="equals" value="=" onclick="calculator.display.value=eval(calculator.display.value)"> 
 			</div>
 			
 			<div class="inputRow">
-				<input type="button" class="operator" name="add" value="+" onclick="calculator.display.value+='+'">
+			<input type="button" class="operator" name="add" value="+" onclick="calculator.display.value+='+'">
 				
 				<input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value+='-'">
 				
 				<input type="button" class="operator" name="multiply" value="*" onclick="calculator.display.value+='*'">
 				
 				<input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value+='/'">
-				
-				<input type="button" class="operator" name="equals" value="=" onclick="calculator.display.value=eval(calculator.display.value)"> 
-				
-				<input type="button" class="operator" name="clear" value="C" onclick="calculator.display.value=''"> 
 			</div>
-			
+
+		
 		</div>
 	</form>
 </body>
