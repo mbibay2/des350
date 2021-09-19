@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style>
+		body {background-color:#095FAD;
+			margin: 0;
+			padding: 0;
+			max-width: 100%;
+			overflow: auto;
+			font-size: 0px;
+			}
+		
+		#display{
+			width: 100%;
+			height: 450px;
+			color: #095FAD;
+			background-color: transparent;
+			border-top-color: transparent;
+			border-left-color: transparent;
+			border-right-color: transparent;
+			border-bottom-color: transparent;
+			font-size: 120px;
+			text-align: center;
+			margin-top: 20px;
+			border-bottom-width: 8px;
+				font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			z-index: 1;
+			
+		}
+		
+		.displayCircle {
+		 position: absolute;
+        top: 10.75%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        height: 400px;
+        width: 800px;
+        border-radius: 375px 375px 0 0;
+        background-color: white;
+			z-index: -1;
+		}
+			
+			.number{
+			width: 20%;
+			height: 120px;
+			background-color: #00B3D0;
+			color: white;
+			border-style: none;
+			font-size: 40px;
+			text-align: center;
+			mergin: none;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			}
+		
+		.number:hover{
+			width: 20%;
+			height: 120px;
+			background-color: white;
+			color: #00B3D0;
+			border-style: none;
+			font-size: 40px;
+			}
+		
+		.operator1a {
+			width: 10%;
+			height: 120px;
+			background: linear-gradient(to top, #00B3D0 50%, #FF4A5E 50%);
+			color: white;
+			border-style: none;
+			font-size: 40px;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			
+			} 
+		
+		.operator1a:hover{
+			width: 10%;
+			height: 120px;
+			background: linear-gradient(to top, #00B3D0 50%, white 50%);
+			color: #FF4A5E;
+			border-style: none;
+			font-size: 40px;
+			}
+
+		.operator1b {
+			width: 10%;
+			height: 120px;
+			background: linear-gradient(to bottom, #00B3D0 50%, #FF4A5E 50%);
+			color: white;
+			border-style: none;
+			font-size: 40px;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			} 
+		
+		.operator1b:hover{
+			width: 10%;
+			height: 120px;
+			background: linear-gradient(to bottom, #00B3D0 50%, white 50%);
+			color: #FF4A5E;
+			border-style: none;
+			font-size: 40px;
+			}
+		
+		.operator1c {
+			width: 10%;
+			height: 120px;
+			background: linear-gradient(to bottom, #A63E95 50%, #FF4A5E 50%);
+			color: white;
+			border-style: none;
+			font-size: 40px;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			} 
+		
+		.operator1c:hover{
+			width: 10%;
+			height: 120px;
+			background: linear-gradient(to top, white 50%, #A63E95 50%);
+			color: #FF4A5E;
+			border-style: none;
+			font-size: 40px;
+			}
+		
+		.operator2 {
+			width: 40%;
+			height: 120px;
+			background-color: #A63E95;
+			color: white;
+			border-style: none;
+			font-size: 40px;
+			text-align: center;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			}
+		
+		.operator2:hover{
+			width: 40%;
+			height: 120px;
+			background-color: white;
+			color: #A63E95;
+			border-style: none;
+			font-size: 40px;
+			}
+				
+	</style>
+	
+<title>Calculataor2</title>
+
+</head>
+
+<body>
+	<form name="calculator">
+		
+		<div id="myCalculator2">
+			
+			<div id="top_display">
+			<input type="text" name="display" id="display" disabled>
+				<div class="displayCircle">
+				</div>
+			</div>
+			
+			<div class="inputRow">
+				<input type="button" class="number" value="1" onclick="calculator.display.value+='1'">
+				
+				<input type="button" class="number" value="2" onclick="calculator.display.value+='2'">
+				
+				<input type="button" class="operator1a" name="add" value="+" onclick="calculator.display.value+='+'">
+				
+				<input type="button" class="operator1b" name="subtract" value="-" onclick="calculator.display.value+='-'">
+				
+				<input type="button" class="number" value="3" onclick="calculator.display.value+='3'">
+				
+				<input type="button" class="number" value="4" onclick="calculator.display.value+='4'">
+			</div>
+			
+			<div class="inputRow">
+				<input type="button" class="number" value="5" onclick="calculator.display.value+='5'">
+				
+				<input type="button" class="number" value="6" onclick="calculator.display.value+='6'">
+				
+				<input type="button" class="operator1a" name="multiply" value="*" onclick="calculator.display.value+='*'">
+				
+				<input type="button" class="operator1b" name="divide" value="/" onclick="calculator.display.value+='/'">
+				
+				<input type="button" class="number" value="7" onclick="calculator.display.value+='7'">
+				
+				<input type="button" class="number" value="8" onclick="calculator.display.value+='8'">
+			</div>
+			
+			<div class="inputRow">
+				<input type="button" class="number" value="9" onclick="calculator.display.value+='9'">
+				
+				<input type="button" class="number" value="0" onclick="calculator.display.value+='0'">
+				
+				<input type="button" class="operator1a" name="decimal" value="." onclick="calculator.display.value+='.'">
+				
+				<input type="button" class="operator1c" name="clear" value="C" onclick="calculator.display.value=''">
+				
+				<input type="button" class="operator2" name="equals" value="=" onclick="calculator.display.value=eval(calculator.display.value)"> 
+				
+				
+			</div>
+			
+		
+		</div>
+	
+	</form>
+</body>
+</html>
