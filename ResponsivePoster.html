@@ -1,0 +1,578 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		
+		
+		
+		body {
+			background-color: black;
+			color: white;
+			font-family: 'Inter', sans-serif;
+		}
+		
+		#circle1 {
+		position: fixed;
+       	top: -25%;
+		left: 10%;
+        transform: translate(-50%, 0%);
+        height: 800px;
+        width: 800px;
+        border-radius: 390px 390px 390px 390px ;
+        background-color: white;
+		opacity: 60%;
+		z-index: -2;
+		background-color: magenta;
+		
+		}
+		
+		#circle2 {
+		position: fixed;
+       	top: 30%;
+		left: 35%;
+        transform: translate(-50%, 0%);
+        height: 200px;
+        width: 200px;
+        border-radius: 390px 390px 390px 390px ;
+        background-color: white;
+		opacity: 50%;
+		z-index: -2;
+		background-color: cyan;
+		
+		}
+		
+		#circle3 {
+		position: fixed;
+        top: 10%;
+        left: 90%;
+        transform: translate(-50%, 0%);
+        height: 400px;
+        width: 400px;
+        border-radius: 375px 375px 375px 375px;
+        background-color: white;
+		opacity: 75%;
+		z-index: -2;
+		background-color: cyan;
+		}
+		
+		#circle4 {
+		position: fixed;
+       	top: 45%;
+		left: 80%;
+        transform: translate(-50%, 0%);
+        height: 125px;
+        width: 125px;
+        border-radius: 390px 390px 390px 390px ;
+        background-color: white;
+		opacity: 50%;
+		z-index: -2;
+		background-color: magenta;
+		
+		}
+			
+		#MainTitle {
+			font-size: 100px;
+			font-weight: 700;
+			padding-bottom: 5%;
+			padding-top: 5%;
+			padding-left: 2%;
+		}
+		
+		
+		#number1 {
+			width: 10%;
+			color: black;
+			font-size: 300px;
+			font-weight: 700;
+			padding-left: 10px;
+			padding-right: 30px;
+			float: left;
+			z-index: 1;
+			position: relative;
+		}
+		
+		#Title1 {
+			width: 60%;
+			font-size: 60px;
+			font-weight: 800;
+			float: left;
+			padding-top: 10.5%;
+			padding-left: 30px;
+			z-index: 1;
+			position: relative;
+		}
+		
+		#paragraph1 {
+			width: 75%;
+			font-size: 28px;
+			font-weight: 500;
+			padding-bottom: 15%;
+			padding-left: 30%;
+			padding-top: 2%;
+			float: right;
+			z-index: 1;
+		}
+		
+		
+		
+		#number2 {
+			width: 20%;
+			color: black;
+			font-size: 300px;
+			font-weight: 700;
+			float: right;
+			z-index: 1;
+		}
+
+		
+		#Title2 {
+			width: 60%;
+			font-size: 60px;
+			font-weight: 800;
+			float: right;
+			padding-top: 11%;
+			text-align: end;
+			z-index: 1;
+		}
+	
+		#paragraph2 {
+			width: 75%;
+			font-size: 28px;
+			font-weight: 500;
+			padding-top: 2%;
+			padding-bottom: 20%;
+			padding-left: 2%;
+			float: left;
+			z-index: 1;
+		}
+		
+		
+		
+		#number3 {
+			width: 25%;
+			color: black;
+			font-size: 300px;
+			font-weight: 700;
+			padding-left: 10px;
+			padding-right: 30px;
+			float: left;
+			z-index: 1;
+			position: relative;
+		}
+		
+		#Title3 {
+			font-size: 60px;
+			font-weight: 800;
+			float: left;
+			width: 60%;
+			padding-top: 10.5%;
+			z-index: 1;
+		}
+		
+		#paragraph3{
+			width: 75%;
+			font-size: 28px;
+			font-weight: 500;
+			padding-top: 2%;
+			padding-bottom: 15%;
+			padding-left: 25%;
+			float: right;
+			z-index: 1;
+		}
+		
+
+
+		#number4 {
+			width: 20%;
+			color: black;
+			font-size: 300px;
+			font-weight: 700;
+			float: right;
+			z-index: 1;
+		}
+		
+		#Title4 {
+			width: 60%;
+			font-size: 60px;
+			font-weight: 800;
+			float: right;
+			padding-top: 11%;
+			text-align: end;
+			z-index: 1;
+		}
+		
+		#paragraph4 {
+			width: 75%;
+			font-size: 28px;
+			font-weight: 500;
+			padding-right: 25%;
+			padding-top: 2%;
+			padding-bottom: 20%;
+			float: left;
+			z-index: 1;
+		}
+		
+		
+		
+		#number5 {
+			width: 25%;
+			color: black;
+			font-size: 300px;
+			font-weight: 700;
+			padding-left: 10px;
+			padding-right: 30px;
+			float: left;
+			z-index: 1;
+			position: relative;
+		}
+		
+		#Title5 {
+			width: 20%;
+			font-size: 60px;
+			font-weight: 800;
+			float: left;
+			width: 70%;
+			padding-top: 10.5%;
+			padding-left: 30px;
+			z-index: 1;
+			position: relative;
+		}
+		
+		#paragraph5 {
+			width: 75%;
+			font-size: 28px;
+			font-weight: 500;
+			padding-bottom: 15%;
+			padding-left: 30%;
+			padding-top: 2%;
+			float: right;
+			z-index: 1;
+		}
+		
+	
+		
+		
+		#number6 {
+			width: 20%;
+			color: black;
+			font-size: 300px;
+			font-weight: 700;
+			padding-right: 5px;
+			float: right;
+			z-index: 1;
+		}
+
+		#Title6 {
+			width: 60%;
+			font-size: 60px;
+			font-weight: 800;
+			float: right;
+			padding-top: 11%;
+			padding-right: 1%;
+			text-align: end;
+			z-index: 1;
+		}
+	
+		#paragraph6 {
+			width: 75%;
+			font-size: 28px;
+			font-weight: 500;
+			padding-right: 25%;
+			padding-top: 2%;
+			padding-bottom: 20%;
+			padding-left: 2%;
+			float: left;
+			z-index: 1;
+		}
+		
+		
+		
+		#number7 {
+			width: 25%;
+			color: black;
+			font-size: 300px;
+			font-weight: 700;
+			padding-left: 10px;
+			padding-right: 30px;
+			float: left;
+			z-index: 1;
+			position: relative;
+		}
+		
+		#Title7 {
+			font-size: 60px;
+			font-weight: 800;
+			float: left;
+			width: 60%;
+			padding-top: 11%;
+			padding-left: 2%;
+			z-index: 1;
+		}
+		
+		#paragraph7 {
+			width: 75%;
+			font-size: 28px;
+			font-weight: 500;
+			padding-top: 2%;
+			padding-bottom: 15%;
+			padding-left: 25%;
+			float: right;
+			z-index: 1;
+		}
+	
+		
+		
+		#number8 {
+			width: 20%;
+			color: black;
+			font-size: 300px;
+			font-weight: 700;
+			float: right;
+			z-index: 1;
+		}
+
+		#Title8 {
+			width: 60%;
+			font-size: 60px;
+			font-weight: 800;
+			float: right;
+			padding-top: 11%;
+			padding-right: 1%;
+			text-align: end;
+			z-index: 1;
+		}
+	
+		#paragraph8 {
+			width: 75%;
+			font-size: 28px;
+			font-weight: 500;
+			padding-right: 25%;
+			padding-top: 2%;
+			padding-bottom: 20%;
+			padding-left: 2%;
+			float: left;
+		}
+		
+		
+		
+		#number9 {
+			width: 25%;
+			color: black;
+			font-size: 300px;
+			font-weight: 700;
+			padding-left: 10px;
+			padding-right: 30px;
+			float: left;
+			z-index: 1;
+			position: relative;
+		}
+		
+		#Title9 {
+			font-size: 60px;
+			font-weight: 800;
+			float: left;
+			width: 60%;
+			padding-top; 11%;
+			padding-left: 1%;
+			z-index: 1;
+		}
+		
+		#paragraph9 {
+			width: 75%;
+			font-size: 28px;
+			padding-bottom: 15%;
+			padding-left: 25%;
+			float: right;
+			z-index: 1;
+		}
+		
+
+		
+		#number10 {
+			width: 20%;
+			color: black;
+			font-size: 300px;
+			font-weight: 700;
+			float: right;
+			z-index: 1;
+		}
+
+		#Title10 {
+			width: 60%;
+			font-size: 60px;
+			font-weight: 800;
+			float: right;
+			padding-top: 11%;
+			text-align: end;
+			z-index: 1;
+		}
+	
+		#paragraph10 {
+			width: 75%;
+			font-size: 28px;
+			font-weight: 500;
+			padding-right: 30%;
+			padding-top: 1%;
+			padding-bottom: 20%;
+			padding-left: 2%;
+			float: left;
+			z-index: 1;
+		}
+		
+		
+		
+		mark1 {
+			color: yellow;
+			opacity: 70%;
+		}
+		
+		.paragraph1 {
+			width: 75%;
+			font-size: 28px;
+			font-weight: 500;
+			padding-bottom: 15%;
+			padding-left: 30%;
+			padding-top: 2%;
+			float: right;
+			z-index: 1;
+		}
+		
+		.paragraph2 {
+			width: 75%;
+			font-size: 28px;
+			font-weight: 500;
+			padding-top: 2%;
+			padding-bottom: 20%;
+			padding-left: 2%;
+			float: left;
+			z-index: 1;
+		}
+		
+		
+		
+	</style>
+<title>ResponsivePoster</title>
+</head>
+
+<body>
+	
+	<div class="10Principles">
+		<div id="MainTitle">
+		Dieter Rams: 10 Principles <br>for Good Design</div><br>
+		
+		<div class="background">
+			<div id="circle1"></div>
+			<div id="circle2"></div>
+			<div id="circle3"></div>
+			<div id="circle4"></div>
+		
+		</div>
+	
+		
+		<div class="principles">
+		<div class="principle">
+		<div id="number1">1</div>
+		<div id="Title1">
+		Good design is <mark1>inventive</mark1></div>
+		<br>
+		<div class="paragraph1">
+		Good design is made for it's current situation and circumstance, it's priority should be the present. However, it can always be improved or altered.</div><br>
+		</div>
+		
+		
+		<div class="principle">
+			<div id="number2">2</div>
+			<div id="Title2">Good design must have a <mark1>purpose</mark1></div>
+		<br>
+		<div class="paragraph2">
+		Design must be functional in order to be designed well. There is an emphasis on usefulness in order for design to be worth anything.</div><br>
+		</div>
+		
+		
+		<div class="principle">
+		<div id="number3">3</div>
+		<div id="Title3">Good design is <mark1>beautiful</mark1></div>
+		<br>
+		<div class="paragraph1">
+		As beauty is a commonality of everyday life, good design must also exemplify beauty. Aesthetic must be taken in to consideration when design is involved. Well-made design is beautiful.</div><br>
+		</div>
+		
+		<div class="principle">
+		<div id="number4">4</div>
+		<div id="Title4">
+		Good design is <mark1>self-explanatory</mark1></div>
+		<br>
+		<div class="paragraph2">
+		A person should not have a difficult time understanding a design. One should be able to read and understand good design just by looking at it. </div><br>
+		</div>
+	
+		<div class="principle">
+		<div id="number5">5</div>
+		<div id="Title5">
+		Good design is <mark1>not overly extravagant</mark1></div>
+		<br>
+		<div class="paragraph1">
+		Well-made design is not intended to be art or décor, it exists for more than just aestheticism. Aesthetic and self-expression should not hinder a product's use or purpose.</div>
+		<br>
+		</div>
+		
+		<div class="principle">
+		<div id="number6">6</div>
+		<div id="Title6">
+		Good design is <mark1>straightforward</mark1></div>	
+		<br>
+		<div class="paragraph2">
+		A design should not promise anything it can't do. It is upfront about what it can and cannot do.</div>
+		<br>
+		</div>
+			
+		<div c6ass="principle">
+		<div id="number7">7</div>
+		<div id="Title7">
+		Good design is <mark1>long-lasting</mark1></div>
+		<br>
+		<div class="paragraph1">
+		Good design isn't meant to be "fashionable", it is not meant to last as long as a trend or fad.</div>
+		<br>
+		</div>
+		
+		
+		<div class="principle">
+		<div id="number8">8</div>
+		<div id="Title8">
+		Good design is <mark1>thorough and intentional</mark1></div>
+		<br>
+		<div class="paragraph2">
+		Nothing is left to chance in design. Everything is done with intention to help the user.</div>
+		<br>
+		</div> 
+		
+		
+		<div class="principle">
+		<div id="number9">9</div>
+		<div id="Title9">
+		Good design does <mark1>not harm the environment</mark1></div>
+		<br>
+		<div class="paragraph1">
+		There should not be an excess of resources used in good design, nor should a design be wasteful. Good design reduces resources used and any pollution produced. It does not use an extensive amount of resources.</div>
+		<br>
+		</div>
+		
+		
+		<div class="principle">
+		<div id="number10">10</div>
+		<div id="Title10">
+		Good design is <mark1>minimal</mark1></div>
+		<br>
+		<div class="paragraph2">
+		Good design is not "burdened" with what is unnecessary. Less is more.</div>
+		<br>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
