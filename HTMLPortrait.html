@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AnimatedPortrait</title>
+	<style>
+		body {
+			background-color: gray;
+			width: 97%;
+			padding-left: 1%;
+			padding-top: 1%;
+		}
+		
+		.Portrait{
+		position: absolute;
+		line-height:1.4cm;
+		width: 97%;
+		padding-left: 1%;
+		padding-top: 1%;
+		align-content: center;
+		top: 20%;
+		left:38%;		
+
+		animation-name: Bounce;
+		animation-duration: 5s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		}
+		
+		@-webkit-keyframes Bounce{
+			0% {top: 20%}
+			25% {top: 15%}
+			75% {top: 15%}
+			100% {top: 20%}
+		}
+		
+
+		
+		
+		.BaseCircle {
+			position: absolute;
+			top: 20px;
+			left 20px;
+			border-style: solid;
+			background-color: white;
+			border-color: white;
+			width: 400px;
+			height: 420px;
+			border-radius: 205px;
+		}
+		
+		.BackHair {
+			position: absolute;
+			top: 250px;
+			left: 220px;
+			transform: translate(-50%, -50%);
+			height: 500px;
+			width: 460px;
+			border-radius: 220px 220px 0 0;
+			background-color: black;
+			z-index: -10;
+		}
+		
+		.LeftBangs {
+			position: absolute;
+			width: 225px;
+			height: 240px;
+			background-color: transparent;
+			top: -20px;
+			left: -25px;
+			right:0;
+			bottom:0;
+			box-shadow: 16px 40px 0px 0px black;
+			border-radius: 50%;
+			z-index: 2;
+
+		}
+		
+		.CenterBangs {
+			position: absolute;
+			width: 180px;
+			height: 250px;
+			background-color: transparent;
+			top: 30px;
+			left: 230px;
+			right:0;
+			bottom:0;
+			box-shadow: -20px 0px 0px 0px black;
+			border-radius: 50%;
+			z-index: 2;
+		}
+			
+		.RightBangs {
+			position: absolute;
+			width: 230px;
+			height: 240px;
+			background-color: transparent;
+			top: -20px;
+			left: 230px;
+			right:0;
+			bottom:0;
+			box-shadow: -16px 40px 0px 0px black;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.LeftHairBlock {
+			position: absolute;
+			width: 150px;
+			height: 240px;
+			background-color: black;
+			top: 25px;
+			left: 35px;
+			right:0;
+			bottom:0;
+			border-radius: 50%;
+			transform: rotate(35deg);
+			z-index: 2;
+		}
+
+		.RightHairBlock {
+			position: absolute;
+			width: 150px;
+			height: 240px;
+			background-color: black;
+			top: 25px;
+			left: 245px;
+			right:0;
+			bottom:0;
+			border-radius: 50%;
+			transform: rotate(-35deg);
+			z-index: 2;
+		}
+
+		.TopHair {
+			position: absolute;
+			width: 425px;
+			height: 420px;
+			background-color: transparent;
+			top: 75px;
+			left:7px;
+			right:0;
+			bottom:0;
+			box-shadow: 0px -60px 0px 0px black;
+			border-radius: 50%;
+		}
+		
+		.CenterPartBlock {
+			position: absolute;
+			top: 70px;
+			left: 180px;
+			width: 100px;
+			height: 80px;
+			background-color: black;
+		}
+		
+		.LeftHairFrame {
+			position: absolute;
+			width:170px;
+			height: 200px;
+			background-color: transparent;
+			top: 175px;
+			left: 45px;
+			right:0;
+			bottom:0;
+			box-shadow: -30px 5px 0px 0px black;
+			border-radius: 50%;
+		}
+		
+		.LeftHairFrameBlock {
+			position: absolute;
+			top: 210px;
+			left: 10px;
+			width: 30px;
+			height: 80px;
+			background-color: black;
+		}
+		
+		.RightHairFrameBlock {
+			position: absolute;
+			top: 210px;
+			left: 400px;
+			width: 30px;
+			height: 80px;
+			background-color: black;
+		}
+		
+		.RightHairFrame {
+			position: absolute;
+			width:170px;
+			height: 200px;
+			background-color: transparent;
+			top: 175px;
+			left: 220px;
+			right:0;
+			bottom:0;
+			box-shadow: 30px 5px 0px 0px black;
+			border-radius: 50%;
+		}
+		
+		.LeftEye {
+			position: absolute;
+			top: 270px;
+			left: 85px;
+			width: 75px;
+			height: 75px;
+			border-radius: 220px 220px 220px 220px;
+			background-color: black;
+		}
+		
+		.RightEye {
+			position: absolute;
+			top: 270px;
+			left: 270px;
+			width: 75px;
+			height: 75px;
+			border-radius: 220px 220px 220px 220px;
+			background-color: black;
+		}
+		
+		.LeftEyelash1 {
+			position: absolute;
+			top: 315px;
+			left: 75px;
+			width: 50px;
+			height: 10px;
+			border-radius: 25px 25px 25px 25px;
+			background-color: black;
+			transform: rotate(150deg)
+		}
+		
+		.LeftEyelash2 {
+			position: absolute;
+			top: 325px;
+			left: 90px;
+			width: 50px;
+			height: 10px;
+			border-radius: 25px 25px 25px 25px;
+			background-color: black;
+			transform: rotate(120deg)
+		}
+		
+		.RightEyelash1 {
+			position: absolute;
+			top: 318px;
+			left: 303px;
+			width: 50px;
+			height: 10px;
+			border-radius: 25px 25px 25px 25px;
+			background-color: black;
+			transform: rotate(30deg);
+		}
+		
+		.RightEyelash2 {
+			position: absolute;
+			top: 328px;
+			left: 285px;
+			width: 50px;
+			height: 10px;
+			border-radius: 25px 25px 25px 25px;
+			background-color: black;
+			transform: rotate(60deg)
+		}
+		
+		.LeftHighlight1 {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-color: white;
+			border-radius: 25px 25px 25px 25px;
+			top: 285px;
+			left: 100px;
+		}
+		
+		.LeftHighlight2 {
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			border-radius: 25px 25px 25px 25px;
+			background-color: white;
+			top: 296px;
+			left: 115px;
+		}
+		
+		.RightHighlight1 {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-color: white;
+			border-radius: 25px 25px 25px 25px;
+			top: 285px;
+			left: 285px;
+		}
+		
+		.RightHighlight2 {
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			border-radius: 25px 25px 25px 25px;
+			background-color: white;
+			top: 296px;
+			left: 301px;
+		}
+		
+		.LeftEyelid {
+			position: absolute;
+			width: 100px;
+			height: 50px;
+			background-color: white;
+			top: 258px;
+			left: 70px;
+			z-index: 1;
+			
+			animation-name: EyelidLeft;
+			animation-duration: 5s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+		
+		@-webkit-keyframes EyelidLeft{
+			0% {top: 258px}
+			50% {top: 220px}
+			75% {top: 220px}
+			100% {top: 258px}
+		}
+		
+		.RightEyelid {
+			position: absolute;
+			width: 100px;
+			height: 50px;
+			background-color: white;
+			top: 258px;
+			left: 260px;
+			z-index: 1;
+	
+			animation-name: EyelidRight;
+			animation-duration: 5s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+		
+		@-webkit-keyframes EyelidRight{
+			0% {top: 258px}
+			50% {top: 220px}
+			75% {top: 220px}
+			100% {top: 258px}
+		}
+		
+	
+		
+		.Mouth {
+			position: absolute;
+			top: 360px;
+			left: 193px;
+			width: 50px;
+			height: 30px;
+			border-radius: 0px 0px 220px 220px;
+			background-color: black;
+			z-index:1;
+		}
+		.Lip {
+			position: absolute;
+			width: 60px;
+			height: 40px;
+			background-color: white;
+			top: 365px;
+			left: 188px;
+			z-index: 2;
+			
+			animation-name: BottomLip;
+			animation-duration: 5s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+		
+		@-webkit-keyframes BottomLip{
+			0% {top: 365px}
+			50% {top: 390px}
+			75% {top: 390px}
+			100% {top: 365px}
+		}
+		
+	</style>
+</head>
+
+<body>
+	
+	<div class="Portrait">
+		<div class="BaseCircle"></div>
+		<div class="Hair">
+			<div class="BackHair"></div>
+			<div class="LeftBangs"></div>
+			<div class="CenterBangs"></div>
+			<div class="RightBangs"></div>
+			<div class="LeftHairBlock"></div>
+			<div class="RightHairBlock"></div>
+			<div class="TopHair"></div>
+			<div class="CenterPartBlock"></div>
+			<div class="LeftHairFrame"></div>
+			<div class="RightHairFrame"></div>
+			<div class="LeftHairFrameBlock"></div>
+			<div class="RightHairFrameBlock"></div>
+		</div>
+		<div class="LeftEye"></div>
+		<div class="LeftEyelash1"></div>
+		<div class="LeftEyelash2"></div>
+		<div class="RightEye"></div>
+		<div class="RightEyelash1"></div>
+		<div class="RightEyelash2"></div>
+		<div class="LeftHighlight1"></div>
+		<div class="LeftHighlight2"></div>
+		<div class="RightHighlight1"></div>
+		<div class="RightHighlight2"></div>
+		<div class="LeftEyelid"></div>
+		<div class="RightEyelid"></div>
+		<div class="Mouth"></div>
+		<div class="Lip"></div>
+	</div>
+</body>
+</html>
